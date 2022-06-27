@@ -1,3 +1,6 @@
-<section>
+<section class="gifs">
     <h1>Gifs mas Trending</h1>
+    <div class="gif" *ngFor="let gif of gifs">
+        <img [src]="gif.images.downsized.url" alt="Imagen">
+    </div>
 </section>

@@ -9,6 +9,6 @@ export class DatosService {
 
   constructor(private http: HttpClient) { }
   obtenerGifs(){
-    return this.http.get(`api.giphy.com/v1/gifs/trending?api_key=%${environment.giphyApiKey}&limit=50`)
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=50`);
   }
 }
