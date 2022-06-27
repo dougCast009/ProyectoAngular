@@ -4,11 +4,6 @@
 }
 
 .boton{
-    background-color: white;
-    outline: rgb(55, 129, 86);;
-}
-
-.boton:hover{
     background-color: rgb(55, 129, 86);
     color: white;
 }
@@ -16,5 +11,15 @@
 @media only screen and (min-width: 900px) {
     .buscador{
         width: 50%;
+    }
+    .boton{
+        background-color: white;
+        color: black;
+        outline: rgb(55, 129, 86) solid 0.1rem;
+    }
+    
+    .boton:hover{
+        background-color: rgb(55, 129, 86);
+        color: white;
     }
 }
