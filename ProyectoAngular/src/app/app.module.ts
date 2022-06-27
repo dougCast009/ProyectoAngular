@@ -9,6 +9,7 @@ import { GifsComponent } from './gifs/gifs.component';
 import { StickersComponent } from './stickers/stickers.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { BuscadorComponent } from './buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     GifsComponent,
     StickersComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,
