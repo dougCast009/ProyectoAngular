@@ -1,3 +1,10 @@
-<section>
-    <h1>Stickers mas Trending</h1>
+<section class="container">
+    <h1 class="text-center mt-3">Stickers mas Trending</h1>
+    <hr>
+    <div *ngFor="let sticker of stickers" class="card-group">
+        <!-- <img [src]="gif.images.original.url" alt="Imagen"> -->
+        <div class="card text-center me p-3">
+            <img [src]="sticker.images.original.url" class="card-img-top" alt="...">
+        </div>
+    </div>
 </section>

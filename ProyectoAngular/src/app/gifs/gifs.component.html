@@ -1,6 +1,10 @@
-<section class="gifs">
-    <h1>Gifs mas Trending</h1>
-    <div class="gif" *ngFor="let gif of gifs">
-        <img [src]="gif.images.downsized.url" alt="Imagen">
+<section class="container">
+    <h1 class="text-center">Gifs mas Trending</h1>
+    <hr>
+    <div *ngFor="let gif of gifs" class="card-group">
+        <!-- <img [src]="gif.images.original.url" alt="Imagen"> -->
+        <div class="card text-center me p-3">
+            <img [src]="gif.images.original.url" class="card-img-top" alt="...">
+        </div>
     </div>
 </section>

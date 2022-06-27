@@ -9,12 +9,14 @@ import { DatosService } from '../datos.service';
 export class GifsComponent implements OnInit {
   gifs: any[] = [];
 
-  constructor(private dataService: DatosService) { }
+  constructor(private dataService: DatosService) { 
+    
+  }
 
   ngOnInit(): void {
     this.dataService.obtenerGifs().subscribe((response: any)=>{
       console.log(response);
-      this.gifs = response.datos;
+      this.gifs = response.data;
     });
   }
 
