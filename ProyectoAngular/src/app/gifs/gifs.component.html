@@ -1,12 +1,11 @@
 <section class="container">
     <h1 class="text-center mt-3">Gifs mas Trending</h1>
-    <app-buscador></app-buscador>
     <hr>
     <div class="row">
         <div *ngFor="let gif of gifs" class="card-group col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card text-center me p-3">
+            <div class="card text-center tarjeta p-3">
                 <img [src]="gif.images.original.url" class="card-img-top" alt="...">
-                <button class="btn btn-success mt-4">Compartir</button>
+                <button class="btn boton mt-4"><i class="fa-brands fa-whatsapp me-3"></i>Compartir</button>
             </div>
         </div>
     </div>    
